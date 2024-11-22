@@ -30,4 +30,4 @@ Welcome to **CDP Store**, a product management system designed to provide an int
 
 Clone the repository:
    ```bash
-   git clone https://github.com/your-username/cdp-store.git
+   git clone https://github.com/bouzayenilyes/cdp-store.git
