@@ -73,7 +73,7 @@ class ProductManager {
 }
 const productManager = new ProductManager();
 try {
-    // implementation : 
+    // implementation : lel les produits oo nzid les images using the Unsplash links library
     const laptop = new Product(1, "Laptop", 3199.97, CategoryProduct.ELECTRONICS, "https://images.unsplash.com/photo-1496181133206-80ce9b88a853");
     const tShirt = new Product(2, "T-Shirt", 63.97, CategoryProduct.CLOTHING, "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab");
     const apple = new FoodProduct(3, "Apple", 3.17, new Date("2024-01-01"), "https://images.unsplash.com/photo-1568702846914-96b305d2aaeb");
@@ -99,7 +99,6 @@ try {
     const keyboard = new Product(23, "Mechanical Keyboard", 159.99, CategoryProduct.ELECTRONICS, "https://images.unsplash.com/photo-1587829741301-dc798b83add3");
     const jacket = new Product(24, "Winter Jacket", 299.99, CategoryProduct.CLOTHING, "https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3");
     const watermelon = new FoodProduct(25, "Watermelon", 8.99, new Date("2024-01-02"), "https://images.unsplash.com/photo-1587049352846-4a222e784d38");
-    // calls of the methods :
     productManager.addProduct(laptop);
     productManager.addProduct(tShirt);
     productManager.addProduct(apple);
