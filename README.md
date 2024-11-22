@@ -20,7 +20,7 @@ Welcome to **CDP Store**, a product management system designed to provide an int
 ### Frontend
 - **HTML5**: Structure and layout of the application.
 - **CSS3**: Styling, including animations with [Animate.css](https://animate.style).
-- **JavaScript**: Logic for interactivity and dynamic updates.
+- **TypeScript**: Logic for interactivity and dynamic updates.
 - **Bootstrap 5**: Responsive design and components.
 - **Font Awesome**: Icons for categories and UI elements.
 
