@@ -112,7 +112,11 @@
             </div>
         </div>
     </footer>
+ 
 
+
+    <!-- Bootstrap JavaScript calls : https://getbootstrap.com/docs/5.3/getting-started/introduction 
+     elli besh nekhdem eelih using CDN link  -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
         window.onload = function() {
@@ -145,7 +149,7 @@
                 });
             }
             
-            // Render products with enhanced grid/list view
+ // Rendering Products  
             function renderProducts(products) {
                 const gridViewChecked = document.getElementById('gridView').checked;
                 let html = `<div class="row g-4 ${gridViewChecked ? '' : 'list-view'}">`; 
@@ -194,7 +198,7 @@
                 html += '</div>';
                 productListDiv.innerHTML = html;
 
-                // Enhanced card animations
+
                 const cards = document.querySelectorAll('.product-card');
                 cards.forEach((card, index) => {
                     card.style.animation = `fadeInUp 0.5s ease ${index * 0.1}s forwards`;
@@ -202,7 +206,7 @@
                 });
             }
 
-            // Enhanced search functionality with debounce
+
             let searchTimeout;
             document.getElementById('searchInput').addEventListener('input', (e) => {
                 clearTimeout(searchTimeout);
@@ -216,7 +220,7 @@
                 }, 300);
             });
 
-            // Category filter with animation
+
             document.getElementById('categoryFilter').addEventListener('change', (e) => {
                 const category = e.target.value;
                 const filteredProducts = category ? 
@@ -225,7 +229,7 @@
                 renderProducts(filteredProducts);
             });
 
-            // Enhanced sort functionality
+
             document.getElementById('sortBy').addEventListener('change', (e) => {
                 const sortBy = e.target.value;
                 const sortedProducts = [...allProducts].sort((a, b) => {
@@ -236,7 +240,6 @@
                 renderProducts(sortedProducts);
             });
 
-            // Grid view toggle
             document.getElementById('gridView').addEventListener('change', () => {
                 renderProducts(allProducts);
             });
