@@ -81,6 +81,14 @@ try {
     const strawberry = new Product(6, "Strawberry", 0.99, CategoryProduct.FOOD);
     const blackberry = new Product(7, "Blackberry", 0.99, CategoryProduct.FOOD);
     const raspberry = new Product(8, "Raspberry", 0.99, CategoryProduct.FOOD);
+    const smartphone = new Product(9, "Smartphone", 699.99, CategoryProduct.ELECTRONICS);
+    const jeans = new Product(10, "Jeans", 49.99, CategoryProduct.CLOTHING);
+    const banana = new FoodProduct(11, "Banana", 0.79, new Date("2024-01-05"));
+    const tablet = new Product(12, "Tablet", 399.99, CategoryProduct.ELECTRONICS);
+    const dress = new Product(13, "Summer Dress", 79.99, CategoryProduct.CLOTHING);
+    const mango = new FoodProduct(14, "Mango", 1.99, new Date("2024-01-03"));
+    const smartwatch = new Product(15, "Smartwatch", 199.99, CategoryProduct.ELECTRONICS);
+    const hoodie = new Product(16, "Hoodie", 39.99, CategoryProduct.CLOTHING);
     // calls of the methods :
     productManager.addProduct(laptop);
     productManager.addProduct(tShirt);
@@ -90,6 +98,14 @@ try {
     productManager.addProduct(strawberry);
     productManager.addProduct(blackberry);
     productManager.addProduct(raspberry);
+    productManager.addProduct(smartphone);
+    productManager.addProduct(jeans);
+    productManager.addProduct(banana);
+    productManager.addProduct(tablet);
+    productManager.addProduct(dress);
+    productManager.addProduct(mango);
+    productManager.addProduct(smartwatch);
+    productManager.addProduct(hoodie);
     console.log("All products:", productManager.getAllProducts());
     const foundProduct = productManager.getProduct(1);
     console.log("Found product:", foundProduct);
