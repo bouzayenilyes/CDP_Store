@@ -89,6 +89,15 @@ try {
     const mango = new FoodProduct(14, "Mango", 6.37, new Date("2024-01-03"));
     const smartwatch = new Product(15, "Smartwatch", 639.97, CategoryProduct.ELECTRONICS);
     const hoodie = new Product(16, "Hoodie", 127.97, CategoryProduct.CLOTHING);
+    const headphones = new Product(17, "Wireless Headphones", 299.99, CategoryProduct.ELECTRONICS);
+    const sneakers = new Product(18, "Running Sneakers", 189.99, CategoryProduct.CLOTHING);
+    const pineapple = new FoodProduct(19, "Pineapple", 4.99, new Date("2024-01-07"));
+    const camera = new Product(20, "Digital Camera", 899.99, CategoryProduct.ELECTRONICS);
+    const sweater = new Product(21, "Wool Sweater", 149.99, CategoryProduct.CLOTHING);
+    const grapes = new FoodProduct(22, "Grapes", 5.99, new Date("2024-01-04"));
+    const keyboard = new Product(23, "Mechanical Keyboard", 159.99, CategoryProduct.ELECTRONICS);
+    const jacket = new Product(24, "Winter Jacket", 299.99, CategoryProduct.CLOTHING);
+    const watermelon = new FoodProduct(25, "Watermelon", 8.99, new Date("2024-01-02"));
     // calls of the methods :
     productManager.addProduct(laptop);
     productManager.addProduct(tShirt);
@@ -106,6 +115,15 @@ try {
     productManager.addProduct(mango);
     productManager.addProduct(smartwatch);
     productManager.addProduct(hoodie);
+    productManager.addProduct(headphones);
+    productManager.addProduct(sneakers);
+    productManager.addProduct(pineapple);
+    productManager.addProduct(camera);
+    productManager.addProduct(sweater);
+    productManager.addProduct(grapes);
+    productManager.addProduct(keyboard);
+    productManager.addProduct(jacket);
+    productManager.addProduct(watermelon);
     console.log("All products:", productManager.getAllProducts());
     const foundProduct = productManager.getProduct(1);
     console.log("Found product:", foundProduct);
