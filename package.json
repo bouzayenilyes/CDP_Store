@@ -1,0 +1,12 @@
+{
+  "name": "cdp_store",
+  "version": "1.0.0",
+  "description": "Welcome to **CDP Store**, a product management system designed to provide an intuitive and user-friendly interface for managing and displaying product inventory.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
