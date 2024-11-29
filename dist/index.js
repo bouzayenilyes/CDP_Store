@@ -99,6 +99,7 @@ try {
     const keyboard = new Product(23, "Mechanical Keyboard", 159.99, CategoryProduct.ELECTRONICS, "https://images.unsplash.com/photo-1587829741301-dc798b83add3");
     const jacket = new Product(24, "Winter Jacket", 299.99, CategoryProduct.CLOTHING, "https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3");
     const watermelon = new FoodProduct(25, "Watermelon", 8.99, new Date("2024-01-02"), "https://images.unsplash.com/photo-1587049352846-4a222e784d38");
+    const houses = new Product(18, "houses", 200000, CategoryProduct.CLOTHING, "https://unsplash.com/fr/photos/rendu-3d-de-lexterieur-dun-batiment-moderne-2MA8dFvOMec");
     productManager.addProduct(laptop);
     productManager.addProduct(tShirt);
     productManager.addProduct(apple);
