@@ -1,6 +1,6 @@
 
 :root {
-    --primary-color: #3f2c50;
+    --primary-color: #39496e;
     --secondary-color: #34495e;
 }
 
@@ -40,7 +40,16 @@ body {
 
 .navbar {
     background: var(--primary-color) !important;
-    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0; 
+    z-index: 1000; 
+    transition: top 0.3s ease-in-out; 
+}
+
+.navbar.scrolled {
+    background: var(--secondary-color) !important;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.15); 
 }
 
 .filters {
