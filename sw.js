@@ -10,7 +10,7 @@ self.addEventListener('install', event => {
                 '/icon.png'
             ]);
         })
-    );
+    ); 
 });
 
 self.addEventListener('fetch', event => {
