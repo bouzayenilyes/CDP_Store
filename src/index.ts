@@ -14,6 +14,7 @@ interface IProduct {
     imageUrl: string;
 }
 
+
 class Product implements IProduct {
     constructor(
         public id: number,
