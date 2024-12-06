@@ -1,6 +1,6 @@
 {
     "name": "CDP Store",
-    "short_name": "PWA",
+    "short_name": "CDP_STORE",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#ffffff",
