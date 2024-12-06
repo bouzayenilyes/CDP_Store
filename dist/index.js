@@ -2,7 +2,7 @@
 //create the enum product  : 
 var CategoryProduct;
 (function (CategoryProduct) {
-    CategoryProduct["FOOD"] = "FOOD";
+    CategoryProduct["CARS"] = "CARS";
     CategoryProduct["ELECTRONICS"] = "ELECTRONICS";
     CategoryProduct["CLOTHING"] = "CLOTHING";
 })(CategoryProduct || (CategoryProduct = {}));
@@ -79,9 +79,9 @@ try {
     const apple = new FoodProduct(3, "Apple", 3.17, new Date("2024-01-01"), "https://images.unsplash.com/photo-1568702846914-96b305d2aaeb");
     const microsoft = new Product(4, "Microsoft", 3199.97, CategoryProduct.ELECTRONICS, "https://images.unsplash.com/photo-1633419461186-7d40a38105ec");
     const orange = new FoodProduct(5, "Orange", 3.17, new Date("2024-01-01"), "https://images.unsplash.com/photo-1557800636-894a64c1696f");
-    const strawberry = new Product(6, "Strawberry", 3.17, CategoryProduct.FOOD, "https://images.unsplash.com/photo-1464965911861-746a04b4bca6");
-    const blackberry = new Product(7, "Blackberry", 3.17, CategoryProduct.FOOD, "https://images.unsplash.com/photo-1615485290382-441e4d049cb5");
-    const raspberry = new Product(8, "Raspberry", 3.17, CategoryProduct.FOOD, "https://images.unsplash.com/photo-1577069861033-55d04cec4ef5");
+    const strawberry = new Product(6, "Strawberry", 3.17, CategoryProduct.CARS, "https://images.unsplash.com/photo-1464965911861-746a04b4bca6");
+    const blackberry = new Product(7, "Blackberry", 3.17, CategoryProduct.CARS, "https://images.unsplash.com/photo-1615485290382-441e4d049cb5");
+    const raspberry = new Product(8, "Raspberry", 3.17, CategoryProduct.CARS, "https://images.unsplash.com/photo-1577069861033-55d04cec4ef5");
     const smartphone = new Product(9, "Smartphone", 2239.97, CategoryProduct.ELECTRONICS, "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9");
     const jeans = new Product(10, "Jeans", 159.97, CategoryProduct.CLOTHING, "https://images.unsplash.com/photo-1542272604-787c3835535d");
     const banana = new FoodProduct(11, "Banana", 2.53, new Date("2024-01-05"), "https://images.unsplash.com/photo-1571771894821-ce9b6c11b08e");
