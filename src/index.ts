@@ -12,6 +12,7 @@ interface IProduct {
     price: number;
     category: CategoryProduct;
     imageUrl: string;
+ 
 }
 
 class Product implements IProduct {
