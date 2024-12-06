@@ -7,7 +7,7 @@ enum CategoryProduct {
 
 // create the interface product :
 interface IProduct {
-    id: number;
+    id: number; 
     name: string;
     price: number;
     category: CategoryProduct;
