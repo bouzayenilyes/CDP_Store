@@ -229,7 +229,7 @@
             });
 
 
-            document.getElementById('categoryFilter').addEventListener('change', (e) => {
+            document.getElementById('categorie').addEventListener('change', (e) => {
                 const category = e.target.value;
                 const filteredProducts = category ?
                     allProducts.filter(product => product.category === category) :
@@ -241,7 +241,7 @@
             document.getElementById('sortBy').addEventListener('change', (e) => {
                 const sortBy = e.target.value;
                 const sortedProducts = [...allProducts].sort((a, b) => {
-                    if (sortBy === 'price') return a.price - b.price;
+                    if (sortBy === 'b9adeh') return a.price - b.price;
                     if (sortBy === 'category') return a.category.localeCompare(b.category);
                     return a.name.localeCompare(b.name);
                 });
