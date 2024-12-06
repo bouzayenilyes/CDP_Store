@@ -1,11 +1,20 @@
 
 :root {
-    --primary-color: #39496e;
-    --secondary-color: #34495e;
+<<<<<<< HEAD
+    --primary-color: #4c6e39;
+    --secondary-color: #54345e;
+=======
+    --primary-color: #272d39;
+    --secondary-color: #536d87;
+>>>>>>> sadok
 }
 
 body {
-    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+<<<<<<< HEAD
+    background: linear-gradient(135deg, #000000 0%, #2e3541 100%);
+=======
+    background: linear-gradient(135deg, #ababab 0%, #c3cfe2 100%);
+>>>>>>> 90050ba3c4c38c9e591d9c8bd4d999671f90f25f
 }
 
 .product-card {
@@ -29,12 +38,12 @@ body {
 .price-tag {
     font-size: 1.2rem;
     font-weight: bold;
-    color: #28a745;
+    color: #f82aff;
     text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
 }
 
 .expiration-date {
-    color: #dc3545;
+    color: #ff273c;
     font-style: italic;
 }
 
