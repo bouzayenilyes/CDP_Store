@@ -15,7 +15,7 @@ interface IProduct {
 }
 
 
-class Product implements IProduct {
+class Product implements IProduct { 
     constructor(
         public id: number,
         public name: string,
