@@ -69,14 +69,14 @@
                     <p class="mb-0">Food Items</p>
                 </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-5">
                 <div class="stats-card text-center animate__animated animate__pulse">
                     <i class="fas fa-laptop fa-2x mb-2 text-info"></i>
                     <h3 id="electronicsCount">0</h3>
                     <p class="mb-0">Electronics</p>
                 </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-5">
                 <div class="stats-card text-center animate__animated animate__pulse">
                     <i class="fas fa-tshirt fa-2x mb-2 text-warning"></i>
                     <h3 id="clothingCount">0</h3>
@@ -106,14 +106,14 @@
                     <div class="social-links">
                         <a href="#" class="text-white me-3"><i class="fab fa-facebook fa-lg"></i></a>
                         <a href="#" class="text-white me-3"><i class="fab fa-twitter fa-lg"></i></a>
-                        <a href="#" class="text-white me-3"><i class="fab fa-instagram fa-lg"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-tiktok fa-lg"></i></a>
                         <a href="#" class="text-white"><i class="fab fa-linkedin fa-lg"></i></a>
                     </div>
                 </div>
             </div>
-            <hr class="mt-4">
+            <hr class="mt-5">
             <div class="text-center">
-                <p class="mb-0">&copy; 2024 Bachelor 3 Software Engineering. All rights reserved.</p>
+                <p class="mb-0">&copy; 2024 Bachelor 3 Network Engineering. All rights reserved.</p>
             </div>
         </div>
     </footer>
@@ -135,9 +135,9 @@
             function updateStats() {
                 const stats = [
                     { id: 'totalProducts', value: allProducts.length },
-                    { id: 'foodCount', value: allProducts.filter(p => p.category === 'FOOD').length },
-                    { id: 'electronicsCount', value: allProducts.filter(p => p.category === 'ELECTRONICS').length },
-                    { id: 'clothingCount', value: allProducts.filter(p => p.category === 'CLOTHING').length }
+                    { id: 'meklaCount', value: allProducts.filter(p => p.category === 'MEKLA').length },
+                    { id: 'electroniquesCount', value: allProducts.filter(p => p.category === 'ELECTRONIQUE').length },
+                    { id: 'lebsaCount', value: allProducts.filter(p => p.category === 'LEBSA').length }
                 ];
 
                 stats.forEach(stat => {
@@ -162,15 +162,15 @@
                 let html = `<div class="row g-4 ${gridViewChecked ? '' : 'list-view'}">`;
 
                 const categoryColorMap = {
-                    'FOOD': 'success',
-                    'ELECTRONICS': 'primary',
-                    'CLOTHING': 'warning'
+                    'MEKLA': 'success',
+                    'ELECTRONIQUES': 'primary',
+                    'LEBSA': 'warning'
                 };
 
                 const categoryIconMap = {
-                    'FOOD': 'fas fa-utensils',
-                    'ELECTRONICS': 'fas fa-laptop',
-                    'CLOTHING': 'fas fa-tshirt'
+                    'MEKLA': 'fas fa-utensils',
+                    'ELECTRONIQUES': 'fas fa-laptop',
+                    'LEBSA': 'fas fa-tshirt'
                 };
 
                 products.forEach(product => {
