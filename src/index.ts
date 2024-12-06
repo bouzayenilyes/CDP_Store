@@ -1,6 +1,6 @@
 //create the enum product  : 
 enum CategoryProduct {
-    FOOD = "FOOD",
+    CARS = "CARS",
     ELECTRONICS = "ELECTRONICS",
     CLOTHING = "CLOTHING"
 }
