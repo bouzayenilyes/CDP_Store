@@ -1,20 +1,11 @@
 
 :root {
-<<<<<<< HEAD
     --primary-color: #4c6e39;
     --secondary-color: #54345e;
-=======
-    --primary-color: #272d39;
-    --secondary-color: #536d87;
->>>>>>> sadok
 }
 
 body {
-<<<<<<< HEAD
     background: linear-gradient(135deg, #000000 0%, #2e3541 100%);
-=======
-    background: linear-gradient(135deg, #ababab 0%, #c3cfe2 100%);
->>>>>>> 90050ba3c4c38c9e591d9c8bd4d999671f90f25f
 }
 
 .product-card {
