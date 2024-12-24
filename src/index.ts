@@ -1,8 +1,9 @@
 //create the enum product  : 
 enum CategoryProduct {
-    FOOD = "FOOD",
+    CARS = "CARS",
     ELECTRONICS = "ELECTRONICS",
-    CLOTHING = "CLOTHING"
+    CLOTHING = "CLOTHING",
+    FOOD = "FOOD"
 }
 
 // create the interface product :
@@ -14,7 +15,8 @@ interface IProduct {
     imageUrl: string;
 }
 
-class Product implements IProduct {
+
+class Product implements IProduct { 
     constructor(
         public id: number,
         public name: string,
@@ -91,9 +93,9 @@ const productManager = new ProductManager<Product>();
 try {
 
     // implementation : lel les produits oo nzid les images using the Unsplash links library
-    const laptop = new Product(1, "Laptop", 3199.97, CategoryProduct.ELECTRONICS, "https://images.unsplash.com/photo-1496181133206-80ce9b88a853");
-    const tShirt = new Product(2, "T-Shirt", 63.97, CategoryProduct.CLOTHING, "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab");
-    const apple = new FoodProduct(3, "Apple", 3.17, new Date("2024-01-01"), "https://images.unsplash.com/photo-1568702846914-96b305d2aaeb");
+    const laptop = new Product(1, "Laptop", 0, CategoryProduct.ELECTRONICS, "https://images.unsplash.com/photo-1496181133206-80ce9b88a853");
+    const tShirt = new Product(2, "T-Shirt", 0, CategoryProduct.CLOTHING, "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab");
+    const apple = new FoodProduct(3, "Apple", 0, new Date("2024-01-01"), "https://images.unsplash.com/photo-1568702846914-96b305d2aaeb");
     const microsoft = new Product(4, "Microsoft", 3199.97, CategoryProduct.ELECTRONICS, "https://images.unsplash.com/photo-1633419461186-7d40a38105ec");
     const orange = new FoodProduct(5, "Orange", 3.17, new Date("2024-01-01"), "https://images.unsplash.com/photo-1557800636-894a64c1696f");
     const strawberry = new Product(6, "Strawberry", 3.17, CategoryProduct.FOOD, "https://images.unsplash.com/photo-1464965911861-746a04b4bca6");
@@ -143,6 +145,7 @@ try {
     productManager.addProduct(keyboard);
     productManager.addProduct(jacket);
     productManager.addProduct(watermelon);
+    productManager.addProduct(houses);
 
     console.log("All products:", productManager.getAllProducts());
 
