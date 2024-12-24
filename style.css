@@ -1,11 +1,11 @@
 
 :root {
-    --primary-color: #39496e;
-    --secondary-color: #34495e;
+    --primary-color: #4c6e39;
+    --secondary-color: #54345e;
 }
 
 body {
-    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    background: linear-gradient(135deg, #000000 0%, #2e3541 100%);
 }
 
 .product-card {

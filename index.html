@@ -4,7 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<<<<<<<< Temporary merge branch 1
+    <title>CDP Store </title>
+=========
     <title>Foued's CDP Store </title>
+>>>>>>>>> Temporary merge branch 2
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
@@ -15,11 +19,19 @@
 
 </head>
 
-<body>
+<body> 
     <nav class="navbar navbar-dark mb-4">
         <div class="container">
             <span class="navbar-brand mb-0 h1 animate__animated animate__fadeIn">
+<<<<<<< HEAD
                 <i class="fas fa-store me-2"></i>CDP Store
+=======
+<<<<<<< HEAD
+                <i class="fas fa-store me-2"></i>CDP Store
+=======
+                <i class="fas fa-store me-2"></i>yahya Store
+>>>>>>> df4bfad8b94bfbf9be41b745a8e06c022ff6de73
+>>>>>>> 08e83d94153bfcf466ce8fc4d6360c228ddee0af
             </span>
             <div class="d-flex">
                 <input type="search" id="searchInput" class="form-control me-2" placeholder="Search products...">
@@ -33,9 +45,9 @@
                 <div class="col-md-4">
                     <select id="categoryFilter" class="form-select">
                         <option value="">All Categories</option>
-                        <option value="FOOD">Food</option>
+                        <option value="CARS">Cars</option>
                         <option value="ELECTRONICS">Electronics</option>
-                        <option value="CLOTHING">Clothing</option>
+                        <option value="CLOTHING">debach</option>
                     </select>
                 </div>
                 <div class="col-md-4">
@@ -69,14 +81,14 @@
                     <p class="mb-0">Food Items</p>
                 </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-5">
                 <div class="stats-card text-center animate__animated animate__pulse">
                     <i class="fas fa-laptop fa-2x mb-2 text-info"></i>
                     <h3 id="electronicsCount">0</h3>
                     <p class="mb-0">Electronics</p>
                 </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-5">
                 <div class="stats-card text-center animate__animated animate__pulse">
                     <i class="fas fa-tshirt fa-2x mb-2 text-warning"></i>
                     <h3 id="clothingCount">0</h3>
@@ -99,7 +111,7 @@
                 <div class="col-md-4">
                     <h5><i class="fas fa-envelope me-2"></i>Contact Us</h5>
                     <p>Email: info@tunisie.collegedeparis.com</p>
-                    <p>Phone: +216 98 175 496</p>
+                    <p>Phone: +216 ********</p>
                 </div>
                 <div class="col-md-4">
                     <h5><i class="fas fa-share-alt me-2"></i>Follow Us</h5>
@@ -111,7 +123,7 @@
                     </div>
                 </div>
             </div>
-            <hr class="mt-4">
+            <hr class="mt-5">
             <div class="text-center">
                 <p class="mb-0">&copy; 2024 Bachelor 3 Software Engineering. All rights reserved.</p>
             </div>
@@ -121,7 +133,7 @@
 
 
     <!-- Bootstrap JavaScript calls : https://getbootstrap.com/docs/5.3/getting-started/introduction 
-     elli besh nekhdem eelih using CDN link  -->
+    elli besh nekhdem eelih using CDN link  -->
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
@@ -135,9 +147,9 @@
             function updateStats() {
                 const stats = [
                     { id: 'totalProducts', value: allProducts.length },
-                    { id: 'foodCount', value: allProducts.filter(p => p.category === 'FOOD').length },
-                    { id: 'electronicsCount', value: allProducts.filter(p => p.category === 'ELECTRONICS').length },
-                    { id: 'clothingCount', value: allProducts.filter(p => p.category === 'CLOTHING').length }
+                    { id: 'meklaCount', value: allProducts.filter(p => p.category === 'MEKLA').length },
+                    { id: 'electroniquesCount', value: allProducts.filter(p => p.category === 'ELECTRONIQUE').length },
+                    { id: 'lebsaCount', value: allProducts.filter(p => p.category === 'LEBSA').length }
                 ];
 
                 stats.forEach(stat => {
@@ -162,15 +174,15 @@
                 let html = `<div class="row g-4 ${gridViewChecked ? '' : 'list-view'}">`;
 
                 const categoryColorMap = {
-                    'FOOD': 'success',
-                    'ELECTRONICS': 'primary',
-                    'CLOTHING': 'warning'
+                    'MEKLA': 'success',
+                    'ELECTRONIQUES': 'primary',
+                    'LEBSA': 'warning'
                 };
 
                 const categoryIconMap = {
-                    'FOOD': 'fas fa-utensils',
-                    'ELECTRONICS': 'fas fa-laptop',
-                    'CLOTHING': 'fas fa-tshirt'
+                    'MEKLA': 'fas fa-utensils',
+                    'ELECTRONIQUES': 'fas fa-laptop',
+                    'LEBSA': 'fas fa-tshirt'
                 };
 
                 products.forEach(product => {
@@ -198,8 +210,7 @@
                                             </p>` : ''}
                                     </div>
                                 </div>
-                            </div>
-                        </div>
+                         
                     `;
                 });
 
@@ -229,7 +240,7 @@
             });
 
 
-            document.getElementById('categoryFilter').addEventListener('change', (e) => {
+            document.getElementById('categorie').addEventListener('change', (e) => {
                 const category = e.target.value;
                 const filteredProducts = category ?
                     allProducts.filter(product => product.category === category) :
@@ -241,7 +252,7 @@
             document.getElementById('sortBy').addEventListener('change', (e) => {
                 const sortBy = e.target.value;
                 const sortedProducts = [...allProducts].sort((a, b) => {
-                    if (sortBy === 'price') return a.price - b.price;
+                    if (sortBy === 'b9adeh') return a.price - b.price;
                     if (sortBy === 'category') return a.category.localeCompare(b.category);
                     return a.name.localeCompare(b.name);
                 });
