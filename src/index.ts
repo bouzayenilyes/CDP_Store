@@ -72,19 +72,20 @@ class ProductManager<T extends Product> {
         return this.products;
     }
 
-    removeProduct(id: number): void {
-        try {
-            const index = this.products.findIndex(p => p.id === id);
-            if (index === -1) {
-                throw new Error(`Product with ID ${id} not found`);
-            }
-            this.products.splice(index, 1);
-        } catch (error: unknown) {
-            if (error instanceof Error) {
-                console.error(`Error removing product: ${error.message}`);
-            }
+   deleteProductById(id: number): void {
+    try {
+        const index = this.products.findIndex(p => p.id === id);
+        if (index === -1) {
+            throw new Error(`Product with ID ${id} not found`);
+        }
+        this.products.splice(index, 1);
+    } catch (error: unknown) {
+        if (error instanceof Error) {
+            console.error(`Error removing product: ${error.message}`);
         }
     }
+}
+
 }
 
 const productManager = new ProductManager<Product>();
@@ -150,7 +151,7 @@ try {
     const foundProduct = productManager.getProduct(1);
     console.log("Found product:", foundProduct);
 
-    productManager.removeProduct(2);
+    productManager.deleteProductById(2);
     console.log("Products after removal:", productManager.getAllProducts());
 
 } catch (error: unknown) {
