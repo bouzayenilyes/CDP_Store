@@ -72,7 +72,7 @@ class ProductManager<T extends Product> {
         return this.products;
     }
 
-   deleteProductById(id: number): void {
+   removeP(id: number): void {
     try {
         const index = this.products.findIndex(p => p.id === id);
         if (index === -1) {
@@ -151,7 +151,7 @@ try {
     const foundProduct = productManager.getProduct(1);
     console.log("Found product:", foundProduct);
 
-    productManager.deleteProductById(2);
+    productManager.removeP(2);
     console.log("Products after removal:", productManager.getAllProducts());
 
 } catch (error: unknown) {
